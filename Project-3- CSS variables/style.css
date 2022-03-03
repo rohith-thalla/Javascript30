@@ -1,0 +1,48 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to right, #193549, #173042);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 120px;
+}
+p {
+  font-size: 28px;
+  color: #fff;
+}
+.top-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.bottom-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS Variables */
+:root {
+  --spacing: 0px;
+  --blur: 0px;
+  --color: #000;
+}
+.image {
+  background: var(--color);
+  padding: var(--spacing);
+  filter: blur(var(--blur));
+}
